@@ -8,7 +8,7 @@ export default function Post(){
         <div className="texts">
         <h2>Review: SteelSeries Arctis Nova 5X Wireless</h2>
         <p className="info">
-          <a className="author">Yashwant</a>
+          <a href = "/" className="author">Yashwant</a>
           <time>06-07-2024</time>
         </p>
         <p className = "summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam architecto, nulla inventore rerum eveniet possimus.</p>
