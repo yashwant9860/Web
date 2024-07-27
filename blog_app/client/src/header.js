@@ -28,6 +28,7 @@ export default function Header(){
           {/* <p>{username}</p> */}
           {username && (
             <>
+            <span>{username}</span>
             <Link to = "/create">Create New Post</Link>
             <a onClick={logout}>Logout</a>
             </>
