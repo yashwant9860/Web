@@ -1,0 +1,8 @@
+npm create vite
+npm install
+npm run dev
+npm install tailwindcss post css
+npx tailwindcss init -p
+npm install autoprefixer
+in vs code i changed css validate to uncheck :go from setting(left bottom)
+npm install dotenv
