@@ -1,10 +1,13 @@
-import Register from "./Register"
 
+import {  UserContextProvider } from "./UserContext";
+import Routes from "./Routes";
 function App() {
-
+  
   return (
-    <Register/>
+    <UserContextProvider>
 
+    <Routes></Routes>
+    </UserContextProvider>
   );
 }
 
