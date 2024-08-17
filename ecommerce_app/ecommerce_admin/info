@@ -1,0 +1,9 @@
+create next-app .
+typescript no
+eslint yes
+tailwindcss yes
+src/directory no
+app router yes
+import alias yes => enter
+5 mins taken
+npm run dev
