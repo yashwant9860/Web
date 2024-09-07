@@ -7,3 +7,5 @@ app router yes
 import alias yes => enter
 5 mins taken
 npm run dev
+npm install next-auth
+npm install next-auth @auth/mongodb-adapter mongodb
