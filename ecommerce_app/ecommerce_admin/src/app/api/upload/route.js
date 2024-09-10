@@ -3,10 +3,15 @@ export const config = {
 }
 
 
+import { mongooseConnect } from '@/lib/mongoose';
 import { promises as fs } from 'fs';
 import { NextResponse } from 'next/server';
 import path from 'path';
+import { isAdminRequest } from '../auth/[...nextauth]/route';
+
 export async function POST(request){
+    await isAdminRequest(request);
+    await mongooseConnect();
     const formData = await request.formData();
     const files = formData.getAll('file');
     const uploadDir = path.join(process.cwd(),'/public/uploads');

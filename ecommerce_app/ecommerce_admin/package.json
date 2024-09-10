@@ -11,9 +11,11 @@
   "dependencies": {
     "@auth/mongodb-adapter": "^3.4.2",
     "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
     "formidable": "^3.5.1",
     "fs": "^0.0.1-security",
-    "mongodb": "^6.8.0",
+    "mongo-db": "^1.0.2",
+    "mongodb": "^6.8.1",
     "mongoose": "^8.6.1",
     "multiparty": "^4.2.3",
     "next": "14.2.5",
@@ -24,6 +26,7 @@
     "react-sortable": "^2.0.0",
     "react-sortablejs": "^6.1.4",
     "react-spinners": "^0.14.1",
+    "react-sweetalert2": "^0.6.0",
     "sortablejs": "^1.15.3"
   },
   "devDependencies": {

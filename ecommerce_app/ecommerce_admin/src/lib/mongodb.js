@@ -16,7 +16,7 @@ const options = {
  
 let client;
  
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV == 'development') {
   if (!global._mongoClient) {
     global._mongoClient = new MongoClient(uri, options);
   }
@@ -28,4 +28,6 @@ if (process.env.NODE_ENV === 'development') {
  
 // Export a module-scoped MongoClient. By doing this in a
 // separate module, the client can be shared across functions.
-export default client.connect()
+const clientPromise = client.connect()
+export default clientPromise
+
