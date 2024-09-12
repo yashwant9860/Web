@@ -32,7 +32,6 @@ yarn-error.log*
 .env.*.local
 ecommerce_app/ecommerce_admin/.env
 ecommerce_app/ecommerce_front/.env
-
 # vercel
 .vercel
 
