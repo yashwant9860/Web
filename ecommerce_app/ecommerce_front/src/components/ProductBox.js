@@ -36,20 +36,30 @@ const ProductInfoBox = styled.div`
     margin-top:5px;
 `;
 const PriceRow = styled.div`
+    display:block;
+    @media screen and (min-width:768px){
     display:flex;
+    gap:5px;
+    }
     align-items:center;
     justify-content:space-between;
     margin-top:2px;
 
+
 `;
 
 const Price = styled.div`
-    font-size:1.5rem;
+    font-size:1rem;
     font-weight:bold;
+    text-align:right;
+    @media screen and (min-width:768px){
+    font-size:1.5rem;
+    text-align:left;
+    }
 `;
 export default function ProductBox({_id,title,description,price,images}){
     const {addProduct} = useContext(CartContext);
-    const url = '/product/'+_id;
+    const url = '/products/'+_id;
     return(
         <ProductWrapper>
         <WhiteBox href={url}>
@@ -62,8 +72,8 @@ export default function ProductBox({_id,title,description,price,images}){
         <Title href={url}>{title}</Title>
         <PriceRow>
             <Price>${price}</Price>
-            <Button onClick={()=>addProduct(_id)} $primary $outline>
-                Add to cart
+            <Button $block onClick={()=>addProduct(_id)} $primary $outline>
+                Add to cart 
             </Button>
         </PriceRow>
         

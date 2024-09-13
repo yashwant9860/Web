@@ -15,7 +15,10 @@ const Bg= styled.div`
 const Title = styled.h1`
     margin:0;
     font-weight:normal;
+    font-size:1.5rem;
+    @media screen and (min-width:768px){
     font-size:3rem;
+}
 `;
 const Desc = styled.p`
     color:#aaa;
@@ -37,6 +40,7 @@ const ColumnsWrapper = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+   
 `;
 const ButtonsWrapper = styled.div`
     margin-top:25px;

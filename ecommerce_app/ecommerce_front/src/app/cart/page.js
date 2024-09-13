@@ -10,7 +10,10 @@ import Table from "@/components/Table";
 import Input from "@/components/Input";
 const ColumnsWrapper = styled.div`
     display:grid;
+    grid-template-columns:1fr;
+    @media screen and (min-width:768px){
     grid-template-columns:1.3fr 0.7fr;
+    }
     gap:40px;
     margin-top:40px;
 `; 
@@ -24,23 +27,38 @@ const ProductInfoCell = styled.div`
     
 `;
 const ProductImageBox = styled.div`
-    max-width:100px;
+    max-width:70px;
     max-height:100px;
-    padding:10px;
+    padding:2px;
     box-shadow: 1px solid rgba(0,0,0,0.1);
     display:flex;
     align-items:center;
     justify-content:center;
     border-radius:10px;
     img{
+        max-width:60px;
+        max-height:60px
+
+    }
+    @media screen and (min-width:768px){
+    padding:10px;
+    max-width:100px;
+    max-height:100px;
+    img{
         max-width:80px;
         max-height:80px
 
     }
+    }
 `;
 
 const QuantityLabel = styled.span`
-    padding:0 3px;
+    padding:0 15px;
+    display:block;
+    @media screen and (min-width:768px){
+        display:inline-block;
+        padding:0 10px
+    }
 `;
 const CityHolder = styled.div`
     display:flex;
